@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gozo Festival 2025</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Gozo Festival 2025 (Ejercicio 78)</title>
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link rel="icon" href="/favicon.png" type="image/png"> </head>
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
 </head>
 
 <body>
@@ -27,7 +25,6 @@
 
     <section class="hero">
         <div class="hero-izquierda">
-            <!-- <img src="/assets/images/circleElement.svg" alt="Fondo del héroe"> -->
             <div class="hero-text-container">
                 <h1>Próximamente</h1>
                 <p class="ciclo">CICLO DE CONCIERTOS INTERNACIONALES EN GALICIA</p>
@@ -64,11 +61,12 @@
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <p>Introduce tu email aquí</p>
-            <input type="email" placeholder="Tu correo electrónico">
-            <label>
-                <input type="checkbox"> Ao subscribirte, aceptas as nosas <a href="#">políticas de privacidade</a>
-            </label>
-            <button class="avisame-submit">Avísame</button>
+            <form class="avisameModal__form" action="contact.php" method="post">
+                <input type="email" name="email" id="email" placeholder="Tu correo electrónico"/>
+                <label>
+                    <input type="checkbox"> Ao subscribirte, aceptas as nosas <a href="#">políticas de privacidade</a>
+                </label>
+                <button id="avisame-submit" type="submit">Avísame</button>
         </div>
     </div>
 
